@@ -4,6 +4,7 @@
     "description": "Nebula admin theme and modules for Magento 2 / Mage-OS. Targets Magento 2.4.7+ (or Mage-OS 2.0+) on PHP 8.1+.",
     "type": "magento2-component",
     "license": "proprietary",
+    "abandoned": "https://qoliber.com/nebula-admin.html",
     "authors": [
         { "name": "Qoliber",   "homepage": "https://qoliber.com" },
         { "name": "Siteation", "homepage": "https://siteation.dev" }

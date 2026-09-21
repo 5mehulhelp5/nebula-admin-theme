@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://qoliber.com/nebula-admin.html">
+    <img src="design/adminhtml/Qoliber/Nebula/web/images/nebula-logo-full.jpg" alt="Nebula" width="180">
+  </a>
+</p>
+
 # Nebula — Modern Admin Theme for Magento 2 / Mage-OS
 
 > **Replace Magento's legacy admin theme — bring it into the 21st century.**
@@ -6,6 +12,14 @@ Nebula modernizes the Magento Admin with a faster interface, cleaner workflows,
 dark mode, and developer-friendly customization — **without forcing you to
 replace Magento itself.** It runs alongside your existing store on
 Magento 2.4.7+ (or Mage-OS 2.0+) and PHP 8.1+.
+
+> [!IMPORTANT]
+> **This repository is archived and reflects Nebula 0.9.0.**
+> Nebula **1.0.0** and later are distributed from qoliber's Composer registry —
+> see [Installation](#installation) below. The `qoliber/nebula-admin-theme`
+> package on Packagist is no longer maintained.
+>
+> Get Nebula free at **[qoliber.com/nebula-admin.html](https://qoliber.com/nebula-admin.html)**.
 
 ---
 
@@ -47,8 +61,21 @@ Magento 2.4.7+ (or Mage-OS 2.0+) and PHP 8.1+.
 
 ## Installation
 
+Nebula is free. Add it to your account at
+[qoliber.com/nebula-admin.html](https://qoliber.com/nebula-admin.html) and a
+Composer key is issued to you at checkout — there is nothing to pay. Your key is
+always available under **Nebula Keys** in your account.
+
 ```bash
-composer require qoliber/nebula-admin-theme
+# 1. add the registry
+composer config repositories.nebula composer https://composer.qoliber.com/r/nebula
+
+# 2. authenticate with the key from your account
+composer config --global --auth bearer.composer.qoliber.com <your-nebula-key>
+
+# 3. install — the metapackage pulls in the whole suite
+composer require nebula/admin
+
 bin/magento setup:upgrade
 bin/magento setup:di:compile
 bin/magento setup:static-content:deploy -f
