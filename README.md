@@ -93,6 +93,18 @@ theme for your environment.
 
 ---
 
+## Links
+
+| | |
+|---|---|
+| **Get Nebula (free)** | [qoliber.com/nebula-admin.html](https://qoliber.com/nebula-admin.html) |
+| **Documentation** | [qoliber.com/nebula](https://qoliber.com/nebula/) |
+| **Composer registry** | `https://composer.qoliber.com/r/nebula` |
+| **Package** | `nebula/admin` (metapackage — installs the full suite) |
+| **License** | [Nebula Community License](LICENSE.md) |
+
+---
+
 ## Modules
 
 This package ships the following focused modules:
@@ -121,7 +133,14 @@ This package ships the following focused modules:
 ## License
 
 Nebula is released under the **Nebula Community License (NCL)** — a
-source-available license. See [LICENSE.md](LICENSE.md) for the full terms.
+**source-available** license. See [LICENSE.md](LICENSE.md) for the full terms.
+
+Source-available is not the same as open source. As stated in the license,
+the NCL **is not an Open Source license as defined by the Open Source
+Initiative (OSI)**: the source is published so you can read, audit and modify
+it for your own store, but redistribution and commercial reuse are restricted.
+
+Nebula is free to use. The cost is zero; the license is not OSI-approved.
 
 ---
 
